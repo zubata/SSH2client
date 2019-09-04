@@ -16,10 +16,10 @@ public class SFTPclient extends BaseClient {
         try {
             sftpChannel.get(source,destination);
             sftpChannel.exit();
+            System.out.println("Скачивание mgwssd закончено");
         } catch (SftpException e) {
             System.out.println("Не найдено такого файла, необходимо проверить наличие папки на удалённом сервере");
         }
-        System.out.println("Скачивание mgwssd закончено");
     }
 
 }
