@@ -8,7 +8,7 @@ public class SSHclient extends BaseClient {
     private FileOutputStream out;
 
     public SSHclient(String host, String user, String password) throws JSchException {
-        super(user,host,password);
+        super(host,user,password);
         try {
             out = new FileOutputStream("C:\\Users\\oleg.zubkov\\логи.txt");
         } catch (FileNotFoundException e) {
